@@ -43,3 +43,13 @@ CREATE TABLE treatments (
 ALTER TABLE treatments ADD COLUMN medical_history_id INTEGER;
 
 ALTER TABLE treatments ADD CONSTRAINT fk_medical_history FOREIGN KEY (medical_history_id) REFERENCES medical_histories(id);
+
+CREATE TABLE treatment_histories (
+    treatment_id INT NOT NULL,
+    medical_history_id INT NOT NULL,
+    PRIMARY KEY (treatment_id, medical_history_id),
+    CONSTRAINT fk_treatments FOREIGN KEY (treatment_id) REFERENCES treatments(id),
+    CONSTRAINT fk_medical_histories FOREIGN KEY (medical_history_id) REFERENCES medical_histories(id)
+);
+
+ALTER TABLE treatments DROP COLUMN medical_history_id;
