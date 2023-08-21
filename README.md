@@ -51,6 +51,9 @@ After you're finished please remove all the comments and instructions!
 
 This project includes the implementation of a clinic's database from a relational diagram where the tables and their columns are specified, as well as the relationships between them. Accordingly, the tables are built and their relationships are established.
 
+![Diagram](img/Captura%20de%20pantalla%202023-08-21%20a%20la(s)%2015.15.12.png)
+
+
 ## 🛠 Built With <a name="built-with"></a>
 
 The project is built using SQL for database management. Getting Started Follow these steps to understand and work on the project:
